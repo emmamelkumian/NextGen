@@ -141,7 +141,7 @@ img {
   padding-left: 2rem;
   padding-right: 2rem;
   display: grid;
-  grid-template: 15vw 60rem / repeat(3, 1fr);
+  grid-template: 15vw 40rem / repeat(3, 1fr);
   gap: 2rem 1rem;
 }
 
@@ -151,8 +151,8 @@ img {
 
 .template-container > div {
   text-align: center;
-  background-color: teal;
+  background-color: #7c7c7c;
   border: solid 2px black;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 1fr 3rem 3rem;
 }
