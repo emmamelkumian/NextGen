@@ -116,10 +116,18 @@ img {
   top: 0%;
   width: 100%;
   z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right-link {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
 }
 
 .topnav a {
-  float: left;
   color: black;
   text-align: center;
   padding: 14px 16px;
@@ -137,22 +145,44 @@ img {
   color: white;
 }
 
+/* template container ------------------------------------------------------------- */
 .template-container {
   padding-left: 2rem;
   padding-right: 2rem;
   display: grid;
   grid-template: 15vw 40rem / repeat(3, 1fr);
   gap: 2rem 1rem;
+  margin: 2rem auto;
+  max-width: 1200px;
 }
 
-.template-container h1 {
+.template-container h3 {
   grid-column: 1 / -1;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2vw;
+  word-break: break-word;
+  margin-bottom: 1rem;
+  color: black;
 }
 
 .template-container > div {
   text-align: center;
-  background-color: #7c7c7c;
-  border: solid 2px black;
   display: grid;
   grid-template-rows: 1fr 3rem 3rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.template-container > div:hover {
+  box-shadow: 0px 44px 60px #909090;
+  transform: box-shadow 0.3s ease-in-out;
+}
+
+.template-container a {
+  text-decoration: none;
+  color: white;
+  background-color: #666;
+  justify-content: center;
+  opacity: 0.2;
+  padding: 1rem;
 }
