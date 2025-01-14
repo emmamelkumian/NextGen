@@ -186,3 +186,41 @@ img {
   opacity: 0.2;
   padding: 1rem;
 }
+
+/* brochure template form */
+
+.templatecontainer {
+  padding: 0 5vw;
+}
+
+.brochureform {
+  padding: 2rem;
+  height: 110vh;
+  display: grid;
+  grid-template-rows: 2rem 5rem 2rem 1fr 2rem 1fr 2rem;
+  background-color: #bbbbbb;
+}
+
+.brochureform input[type="text"],
+.brochureform textarea {
+  border: 1px solid #cccccc;
+  border-radius: 1rem;
+  width: 100%;
+  height: 90%;
+  padding: 1rem;
+  resize: vertical;
+}
+
+.brochureform input[type="submit"] {
+  margin: auto;
+  /* center submit button */
+  width: 40%;
+  height: 90%;
+  background-color: #7fffd4;
+  border-radius: 0.25rem;
+  border: 1px solid #9e7a7a;
+}
+
+.brochureform label {
+  font-size: 1.5rem;
+}
