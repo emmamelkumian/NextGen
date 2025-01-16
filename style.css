@@ -171,6 +171,10 @@ img {
   grid-template-rows: 1fr 3rem 3rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  background-image: url('comingSoon.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .template-container > div:hover {
@@ -181,10 +185,13 @@ img {
 .template-container a {
   text-decoration: none;
   color: white;
-  background-color: #666;
   justify-content: center;
   opacity: 0.2;
   padding: 1rem;
+}
+
+.template-container a:hover {
+  opacity: 1;
 }
 
 /* brochure template form */
