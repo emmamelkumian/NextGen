@@ -1,56 +1,137 @@
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
-    <script
-        src="https://unpkg.com/aframe-environment-component@1.3.3/dist/aframe-environment-component.min.js"></script>
-</head>
-
-<body>
+    <script src="https://unpkg.com/aframe-environment-component@1.3.3/dist/aframe-environment-component.min.js"></script>
+  </head>
+  <!-- open in a localhost or images wont load -->
+  <body>
     <a-scene>
-        <a-assets>
-            <a-plane src="#ground" color="#999" height="100" width="100" rotation="-90 0 0"></a-plane>
-        </a-assets>
-        
-        <!-- backgroun and lighting -->
-        <a-entity environment="preset: default; groundColor: #003317; groundTexture: none;"></a-entity>
-        <a-entity light="color: #FFFF; angle: 60; intensity: 1; spot: point" position="0.092 3 2.769"></a-entity>
+      <a-assets>
+        <a-plane
+          src="#ground"
+          color="#999"
+          height="100"
+          width="100"
+          rotation="-90 0 0"
+        ></a-plane>
+      </a-assets>
 
-        <!-- wall -->
-        <a-entity position="0 0 0">
-            <a-box position="0 2 -4" rotation="0 0 0" color="#FFFF" depth="0.1" height="4" width="10"></a-box>
-            <a-box position="6 2 -2.251" rotation="0 -60 0" color="#FFFF" depth="0.1" height="4" width="4"></a-box>
-            <a-box position="-6 2 -2.251" rotation="0 60 0" color="#FFFF" depth="0.1" height="4" width="4"></a-box>
-        </a-entity>
+      <!-- backgroun and lighting -->
+      <a-entity
+        environment="preset: default; groundColor: #003317; groundTexture: none;"
+      ></a-entity>
+      <a-entity
+        light="color: #FFFF; angle: 60; intensity: 1; spot: point"
+        position="0.092 3 2.769"
+      ></a-entity>
 
-        <!-- Title -->
-        <a-entity>
-            <a-text value="Title Exhibition" color="black" position="0 3.5 -3.95" scale="2 2 2" align="center" ></a-text>
-        </a-entity>
-        
-        <!-- photos -->
-        <a-entity>
-            <a-image src="Photo/car.jpg" position="0 2 -3.89" ></a-image>
-            <a-image src="Photo/building.jpg" position="-1.5 2 -3.89"></a-image>
-            <a-image src="Photo/ocean.jpg" position="-3 2 -3.89"></a-image>
-            <a-image src="Photo/roof.jpg" position="1.5 2 -3.89"></a-image>
-            <a-image src="photo/snow.jpg" position="3 2 -3.89"></a-image>
-        </a-entity>
+      <!-- wall -->
+      <a-entity position="0 0 0">
+        <a-box
+          position="0 2 -4"
+          rotation="0 0 0"
+          color="#FFFF"
+          depth="0.1"
+          height="4"
+          width="10"
+        ></a-box>
+        <a-box
+          position="6 2 -2.251"
+          rotation="0 -60 0"
+          color="#FFFF"
+          depth="0.1"
+          height="4"
+          width="4"
+        ></a-box>
+        <a-box
+          position="-6 2 -2.251"
+          rotation="0 60 0"
+          color="#FFFF"
+          depth="0.1"
+          height="4"
+          width="4"
+        ></a-box>
+        <a-box
+          position="9 2 2"
+          color="#FFFFFF"
+          depth="5"
+          height="4"
+          width="4"
+        ></a-box>
+        <a-box
+          position="-9 2 2"
+          color="#FFFFFF"
+          depth="5"
+          height="4"
+          width="4"
+        ></a-box>
+      </a-entity>
 
-        <!--photo frame-->
-        <a-entity>
-            <a-box position="0 2 -3.95" rotation="0 0 0" color="#301d05" depth="0.1" height="1.2" width="1.2"></a-box>
-            <a-box position="-1.5 2 -3.95" rotation="0 0 0" color="#301d05" depth="0.1" height="1.2" width="1.2"></a-box>
-            <a-box position="-3 2 -3.95" rotation="0 0 0" color="#301d05" depth="0.1" height="1.2" width="1.2"></a-box>
-            <a-box position="1.5 2 -3.95" rotation="0 0 0" color="#301d05" depth="0.1" height="1.2" width="1.2"></a-box>
-            <a-box position="3 2 -3.95" rotation="0 0 0" color="#301d05" depth="0.1" height="1.2" width="1.2"></a-box>
-        
-        </a-entity>
+      <!-- Title -->
+      <a-entity>
+        <a-text
+          value="Title Exhibition"
+          color="black"
+          position="0 3.5 -3.95"
+          scale="2 2 2"
+          align="center"
+        ></a-text>
+      </a-entity>
 
+      <!-- photos -->
+      <a-entity>
+        <a-image src="Photo/car.jpg" position="0 2 -3.89"></a-image>
+        <a-image src="Photo/building.jpg" position="-1.5 2 -3.89"></a-image>
+        <a-image src="Photo/ocean.jpg" position="-3 2 -3.89"></a-image>
+        <a-image src="Photo/roof.jpg" position="1.5 2 -3.89"></a-image>
+        <a-image src="photo/snow.jpg" position="3 2 -3.89"></a-image>
+      </a-entity>
 
-
+      <!--photo frame-->
+      <a-entity>
+        <a-box
+          position="0 2 -3.95"
+          rotation="0 0 0"
+          color="#301d05"
+          depth="0.1"
+          height="1.2"
+          width="1.2"
+        ></a-box>
+        <a-box
+          position="-1.5 2 -3.95"
+          rotation="0 0 0"
+          color="#301d05"
+          depth="0.1"
+          height="1.2"
+          width="1.2"
+        ></a-box>
+        <a-box
+          position="-3 2 -3.95"
+          rotation="0 0 0"
+          color="#301d05"
+          depth="0.1"
+          height="1.2"
+          width="1.2"
+        ></a-box>
+        <a-box
+          position="1.5 2 -3.95"
+          rotation="0 0 0"
+          color="#301d05"
+          depth="0.1"
+          height="1.2"
+          width="1.2"
+        ></a-box>
+        <a-box
+          position="3 2 -3.95"
+          rotation="0 0 0"
+          color="#301d05"
+          depth="0.1"
+          height="1.2"
+          width="1.2"
+        ></a-box>
+      </a-entity>
     </a-scene>
-</body>
-
+  </body>
 </html>
