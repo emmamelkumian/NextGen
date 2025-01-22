@@ -171,7 +171,7 @@ img {
   grid-template-rows: 1fr 3rem 3rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  background-image: url('comingSoon.png');
+  background-image: url("comingSoon.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -196,15 +196,23 @@ img {
 
 /* brochure template form */
 
+form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 4rem;
+  gap: 1rem;
+}
+
 .templatecontainer {
   padding: 0 5vw;
 }
 
 .brochureform {
+  border-radius: 1rem;
   padding: 2rem;
   height: 110vh;
   display: grid;
-  grid-template-rows: 2rem 5rem 2rem 1fr 2rem 1fr 2rem;
+  grid-template-rows: 2rem 5rem 2rem 1fr 2rem 1fr;
   background-color: #bbbbbb;
 }
 
@@ -218,7 +226,7 @@ img {
   resize: vertical;
 }
 
-.brochureform input[type="submit"] {
+form input[type="submit"] {
   margin: auto;
   /* center submit button */
   width: 40%;
@@ -226,6 +234,8 @@ img {
   background-color: #7fffd4;
   border-radius: 0.25rem;
   border: 1px solid #9e7a7a;
+  grid-column: 1 / -1;
+  font-size: 1.5rem;
 }
 
 .brochureform label {
