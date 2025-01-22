@@ -7,30 +7,38 @@
   <body>
     <!-- open in a localhost or background wont load -->
     <a-scene>
+      <a-assets>
+        <img src="./Photo/Brochure1.jpg" id="brochure1" />
+        <img src="./Photo/Brochure2.jpg" id="brochure2" />
+        <img src="./Photo/Brochure3.jpg" id="brochure3" />
+      </a-assets>
       <a-entity position="0 0 0">
         <a-box
-          position="0 0 -4"
+          position="0 -1 -5.5"
           rotation="0 0 0"
-          color="#FFFF"
+          color="#FFFFFF"
           depth="0.1"
-          height="4"
+          height="6"
           width="3"
+          material="src: #brochure2"
         ></a-box>
         <a-box
-          position="4 0 -2.251"
-          rotation="0 -50 0"
-          color="#FFFF"
+          position="4 -1 -4.251"
+          rotation="0 -40 0"
+          color="#FFFFFF"
           depth="0.1"
-          height="4"
+          height="6"
           width="3"
+          material="src: #brochure3"
         ></a-box>
         <a-box
-          position="-4 0 -2.251"
-          rotation="0 50 0"
-          color="#FFFF"
+          position="-4 -1 -4.251"
+          rotation="0 40 0"
+          color="#FFFFFF"
           depth="0.1"
-          height="4"
+          height="6"
           width="3"
+          material="src: #brochure1"
         ></a-box>
       </a-entity>
       <a-sky src="./Photo/background.jpg" rotation="0 -90 0"></a-sky>
